@@ -217,7 +217,7 @@ namespace Labb3_School
                         break;
 
                     case 2:
-                        grades = GetGradesAverage();
+                        grades = GetAllSetGrades();
                         decimal avarageGrade = 0;
                         foreach (StudentCourseConnection g in grades)
                         {
@@ -240,7 +240,7 @@ namespace Labb3_School
 
         }
 
-        private static List<StudentCourseConnection> GetGradesAverage()
+        private static List<StudentCourseConnection> GetAllSetGrades()
         {
             using SchoolContext context = new SchoolContext();
 
